@@ -1,21 +1,18 @@
-"""Museum of the Year 3000: writes the entry text to /output/entry.txt.
-
-Why this line: Straight-faced museum label: a parking meter described as a coin-fed steel post, with the punch that people called paying to park 'freedom'. Concrete object, deadpan tone, punch on the last word.
-"""
+#!/usr/bin/env python3
+"""Museum of the Year 3000 — one-line museum label for an everyday object."""
 
 import os
 
-ENTRY = 'Parking Meter, c. 2025. Citizens fed this steel post coins for permission to leave a car unattended, and called the arrangement freedom.'
+ENTRY_TEXT = "Plastic Fork, c. 2025. Built to outlive its owner by four centuries, used for nine minutes, then buried with full honours in a landfill the size of Belgium."
 
 OUTPUT_PATH = "/output/entry.txt"
 
 
-def main():
-    assert ENTRY and not ENTRY.isspace(), "entry must not be empty"
-    os.makedirs("/output", exist_ok=True)
-    with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
-        f.write(ENTRY)
-    print("wrote", OUTPUT_PATH, len(ENTRY), "chars")
+def main() -> None:
+    os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
+    with open(OUTPUT_PATH, "w", encoding="utf-8") as out:
+        out.write(ENTRY_TEXT)
+    print(f"entry.txt: {len(ENTRY_TEXT)} characters")
 
 
 if __name__ == "__main__":

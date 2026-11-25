@@ -8,7 +8,7 @@ A museum label from the year 3000 for an ordinary object from today: a parking m
 
 ## Entry
 
-> Parking Meter, c. 2025. Citizens fed this steel post coins for permission to leave a car unattended, and called the arrangement freedom.
+> Plastic Fork, c. 2025. Built to outlive its owner by four centuries, used for nine minutes, then buried with full honours in a landfill the size of Belgium.
 
 ## Run it
 
